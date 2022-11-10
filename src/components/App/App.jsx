@@ -1,9 +1,9 @@
-import { Form } from '../Form/Form';
-import { Contacts } from '../Contacts/Contacts';
-import { Filter } from '../Filter/Filter';
+import { Form } from './Form/Form';
+import { Contacts } from './Contacts/Contacts';
+import { Filter } from './Filter/Filter';
 import css from './App.module.css';
 import { useState } from 'react';
-import { useLocalStorage } from '../hooks/useLocalStorage';
+import { useLocalStorage } from './hooks/useLocalStorage';
 
 export const App = () => {
   const [contacts, setContacts] = useLocalStorage('contacts', []);
